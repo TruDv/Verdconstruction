@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Construction | Verdant Acres Limited</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <style>
+        /* Define the font and ensure the body takes up the full screen height */
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F7F7F9;
+        }
+    </style>
+
+    <script>
+        // Tailwind Custom Configuration using the brand colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#DAA520', // Gold Accent
+                        'corporate': '#1B5E20', // Deep Green
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Satoshi', 'sans-serif'], // Assuming a bold, modern font like Satoshi/Poppins
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+
+    <!-- CONSTRUCTION CARD -->
+    <div class="max-w-md mx-4 p-8 sm:p-12 bg-white rounded-3xl shadow-2xl text-center border-t-4 border-primary transform transition-all duration-500 hover:shadow-3xl">
+        
+        <!-- Icon -->
+        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-corporate/10 text-corporate rounded-full flex items-center justify-center mx-auto mb-6 sm:mb-8 transition-colors duration-500">
+            <i class="fas fa-tools text-3xl sm:text-4xl"></i>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-corporate mb-4 font-heading">
+            Website Under Construction
+        </h1>
+        
+        <!-- Message -->
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            We are working hard to finalize the new Verdant Acres experience. We appreciate your patience and look forward to sharing our integrated coconut platform soon!
+        </p>
+
+        <!-- Call to Action / Contact Info -->
+        <div class="space-y-4">
+            <a href="mailto:info@verdantacreslimited.com" class="inline-flex items-center justify-center w-full bg-primary text-white font-bold py-3 px-6 rounded-xl hover:bg-corporate transition duration-300 shadow-lg shadow-primary/30">
+                <i class="fas fa-envelope mr-2"></i> Contact Us Directly
+            </a>
+            <p class="text-sm text-gray-500 pt-2">
+                For urgent inquiries, please email: <span class="font-medium text-corporate">info@verdantacreslimited.com</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Optional Footer for branding -->
+    <footer class="absolute bottom-0 w-full text-center p-4 text-sm text-gray-400">
+        &copy; 2025 Verdant Acres Limited.
+    </footer>
+
+</body>
+</html>
